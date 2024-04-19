@@ -3,6 +3,7 @@ const app = express();
 const util = require('node:util');
 const exec = util.promisify(require('node:child_process').exec);
 
+app.use(express.static(__dirname));
 
 const port = process.env.PORT || 3000
 

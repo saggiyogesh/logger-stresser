@@ -10,6 +10,8 @@ WORKDIR /app
 
 ADD . /app
 
+RUN wget https://ash-speed.hetzner.com/100MB.bin
+
 RUN npm install
 
 ENTRYPOINT npm start
