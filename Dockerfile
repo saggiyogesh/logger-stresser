@@ -2,7 +2,7 @@ FROM node:20
 
 # RUN apk --update add git
 
-RUN apt update && apt install stress
+RUN apt update && apt install stress htop -y
 
 ENV PORT 80
 
